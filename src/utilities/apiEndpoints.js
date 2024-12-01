@@ -1,8 +1,8 @@
 //const isDevelopment = import.meta.env.MODE === 'development'
 //const myBaseUrl = isDevelopment ? import.meta.env.VITE_API_BASE_URL_LOCAL : import.meta.env.VITE_API_BASE_URL_DEPLOY
 
-export const BaseURL = import.meta.env.VITE_API_BASE_URL_DEPLOY
-export const BaseWebSocketURL = "ws:" + import.meta.env.VITE_API_BASE_URL_DEPLOY
+export const BaseURL = "https://guffmandu-backend.onrender.com"
+export const BaseWebSocketURL = "ws://guffmandu-backend.onrender.com"
 
 // Signaling Server URL
 export const SignalingURL = `${BaseWebSocketURL}/connection-request/?username="diwash"`
