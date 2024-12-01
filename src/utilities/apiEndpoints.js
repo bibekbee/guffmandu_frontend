@@ -1,8 +1,8 @@
-const isDevelopment = import.meta.env.MODE === 'development'
-const myBaseUrl = isDevelopment ? import.meta.env.VITE_API_BASE_URL_LOCAL : import.meta.env.VITE_API_BASE_URL_DEPLOY
+//const isDevelopment = import.meta.env.MODE === 'development'
+//const myBaseUrl = isDevelopment ? import.meta.env.VITE_API_BASE_URL_LOCAL : import.meta.env.VITE_API_BASE_URL_DEPLOY
 
-export const BaseURL = myBaseUrl
-export const BaseWebSocketURL = "ws:" + myBaseUrl
+export const BaseURL = import.meta.env.VITE_API_BASE_URL_DEPLOY
+export const BaseWebSocketURL = "ws:" + import.meta.env.VITE_API_BASE_URL_DEPLOY
 
 // Signaling Server URL
 export const SignalingURL = `${BaseWebSocketURL}/connection-request/?username="diwash"`
