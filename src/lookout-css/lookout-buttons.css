@@ -1,0 +1,98 @@
+.brand-btn {
+    border-radius:15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+
+    background-color: var(--brand-color);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.brand-btn:hover {
+    background-color: var(--brand-color-darker);
+}
+
+.normal-btn{
+    border-radius:15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+
+    background-color: var(--boxes-color);
+    box-shadow: var(--main-box-shadow);
+    transition:background-color 0.3s;
+
+    cursor: pointer;
+}
+.normal-btn:hover{
+    background-color: var(--normal-btn-hover-color);
+}
+
+.video-control-btn{
+    background-color: var(--main-background-color);
+    box-shadow: var(--main-box-shadow);
+    transition:background-color 0.3s;
+}
+.video-control-btn:hover{
+    background-color: var(--normal-btn-hover-color);
+}
+
+.red-btn{
+    border-radius:15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+
+    background-color: rgb(233, 0, 0);
+    color:white;
+    transition: background-color 0.2s;
+    border-radius:0.5rem;
+}
+.red-btn:hover{
+    background-color: rgb(207, 0, 0);
+}
+
+.grayish-btn{
+    border-radius:15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+
+    background-color: var(--icon-basic-color);
+    color: var(--text-theme-opposite-color);
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.grayish-btn:hover{
+    background-color: var(--grayish-btn-hover-color);
+}
+
+.grayish-btn>svg{
+    fill:var(--text-theme-opposite-color)
+}

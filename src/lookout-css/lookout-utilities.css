@@ -1,0 +1,96 @@
+
+/* Designs of the main boxes */
+.main-box{
+    background-color: var(--boxes-color);
+    box-shadow: var(--main-box-shadow);
+    border: var(--main-box-border);
+    border-radius: 1rem;
+}
+.inner-box{
+    background-color: var(--inner-box-color);
+}
+
+/* For Profile Pictures */
+.profile-photo{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* For form inputs */
+.input-box{
+    background-color: var(--input-box-background-color);
+}
+.input-box:focus-visible{
+    outline: none;
+}
+
+.input-radio + label{
+    background-color: var(--main-background-color);
+    border: var(--main-box-border);
+    border-radius: 1rem;
+    
+}
+.input-radio:checked + label {
+    background-color: var(--brand-color); /* black theme when checked */
+    color: #ffffff; /* text color when checked */
+    border:none;
+}
+
+/* Profile settings options */
+.settings-option-box{
+    height:3rem;
+    padding-right:1rem;
+    padding-left:1rem;
+
+    border-radius: 1rem;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition:background-color 0.3s;
+    cursor:pointer;
+}
+.settings-option-box:hover{
+    background-color: var(--inner-box-color);
+}
+
+/* Chat Section -> Video Container */
+.video-continer {
+    width: 90%;
+    aspect-ratio: 4 / 3;
+    position: relative;
+    border-radius: 1rem;
+    background-color: var(--video-container-color);
+  }
+  
+  @media (min-width: 768px) {
+    /* Tailwind's md breakpoint */
+    .video-continer {
+      width: 100%;
+    }
+  }
+
+/* This contains pop up boxes
+    like:
+        LoginBox, RegisterBox, ProfieSettingsForm and Purchase Verification BOx */
+
+.popup-container{
+    height:100vh;
+    width:100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 50;
+
+    background-color: var(--popup-container-color);
+    backdrop-filter: blur(1px);
+}
+
+

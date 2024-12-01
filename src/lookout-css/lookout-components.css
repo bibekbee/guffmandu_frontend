@@ -1,0 +1,46 @@
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Colors */
+.bg-brand-color{
+    background-color: var(--brand-color);
+}
+.bg-main-background{
+    background-color:var(--main-background-color)
+}
+.bg-icon-basic-color{
+    background-color: var(--icon-basic-color);
+}
+.bg-text-color{
+    background-color: var(--text-theme-color);
+}
+
+/* Text Colors */
+.text-brand-color{
+    color:var(--brand-color)
+}
+.text-theme-opposite-color{
+    color:var(--text-theme-opposite-color);
+}
+
+/* Border Colors */
+.border-brand-color{
+    border-color: var(--brand-color);
+}
+.border-icon-color{
+    border-color: var(--icon-basic-color)
+}
+
+/* SVG colors */
+.fill-brand-color{
+    fill: var(--brand-color);
+}
+.fill-text-color{
+    fill: var(--theme-text-color);
+}
+.fill-basic-color{
+    fill: var(--icon-basic-color)
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    /* Background Colors */
+    --main-background-color: white;
+    --boxes-color:white;
+    --inner-box-color:#ececec;
+    
+    /* Main theme color */
+    --brand-color:#FF5096;
+    --brand-color-darker:#ff3385;
+    
+    /* Main Box Stuffs */
+    --main-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    --main-box-border: 0.2px solid rgba(0, 0, 0, 0.2);
+    
+    /* Text/Fonts Color */
+    --text-theme-color:rgb(68, 68, 68);
+    --text-theme-opposite-color:rgb(255, 255, 255);
+    
+    /* Input Box Stuffs */
+    --input-box-background-color: rgb(243, 243, 243);
+    
+    /* Buttons Stuffs */
+    --normal-btn-hover-color:rgb(249, 249, 249); /* --boxes-color used as a non-Hover color */
+    --grayish-btn-hover-color:rgb(0, 0, 0); /* --icon-basic-color used as a non-Hover color */
+    
+    /* Icon Color */
+    --icon-basic-color:rgb(44, 44, 44);
+
+    /* Video Container Section */
+    --video-container-color:rgb(35, 35, 45);
+    
+    /* PopUp Container: like LoginBox and Register Box Container */
+    --popup-container-color:rgba(205, 205, 205, 0.377);
+}
+
+.dark-themed{
+    /* Background Colors */
+    --main-background-color: #303134;
+    --boxes-color:#292A2D;
+    --inner-box-color:#303134;
+    
+    /* Main Box Stuffs */
+    --main-box-shadow: none;
+    --main-box-border: none;
+    
+    /* Text/Fonts Color */
+    --text-theme-color:rgb(222, 222, 222);
+    --text-theme-opposite-color:rgb(0, 0, 0);
+    
+    /* Input Box Stuffs */
+    --input-box-background-color: #303134; /* It's same as main background color */
+    
+    /* Buttons Stuffs */
+    --normal-btn-hover-color: #212226; /* --boxes-color used as a non-Hover color */
+    --grayish-btn-hover-color:rgb(255, 255, 255); /* --icon-basic-color used as a non-Hover color */
+    
+    /* Icon Color */
+    --icon-basic-color:rgb(189, 189, 189);
+
+    /* Video Container Section */
+    --video-container-color:rgb(56, 56, 61);
+    
+    /* PopUp Container: like LoginBox and Register Box Container */
+    --popup-container-color:rgba(45, 45, 45, 0.482);
+}
+
+* {
+    font-family: "Inter", sans-serif !important;
+    color:var(--text-theme-color);
+}
+
+body{
+    background-color: var(--main-background-color);
+}
+
+/*
+Scrool bar Design 👇
+*/
+
+/* Width */
+::-webkit-scrollbar {
+    width: 4px; /* Adjust as needed */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; /* Set background to transparent */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a1a1a1; /* Change this color to match your desired thumb color */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1; 
+}
